@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar";
 import useVideos from "../hooks/useVideos";
 import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
-
+import "./App.css";
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [videos, fetchVideos] = useVideos("");

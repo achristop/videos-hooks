@@ -1,5 +1,5 @@
-import './VideoItem.css';
-import React from 'react';
+import "./VideoItem.css";
+import React from "react";
 
 const VideoItem = ({ video, onVideoSelect }) => {
   return (
@@ -10,7 +10,9 @@ const VideoItem = ({ video, onVideoSelect }) => {
         src={video.snippet.thumbnails.medium.url}
       />
       <div className="content">
-        <div className="header">{video.snippet.title}</div>
+        <div className="header" style={{ color: "white" }}>
+          {video.snippet.title}
+        </div>
       </div>
     </div>
   );
